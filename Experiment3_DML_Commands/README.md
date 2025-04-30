@@ -50,7 +50,7 @@ SELECT column1, column2 FROM table_name WHERE condition;
 -- Paste Question 1 here
 
 ```sql
--- Paste your SQL code below for Question 1
+update Employees set FIRST_NAME = 'John' WHERE DEPARTMENT_ID=80 AND COMMISSION_PCT<.35;
 ```
 
 **Output:**
@@ -62,7 +62,7 @@ SELECT column1, column2 FROM table_name WHERE condition;
 -- Paste Question 2 here
 
 ```sql
--- Paste your SQL code below for Question 2
+UPDATE Employees set EMAIL ='Unavailable';
 ```
 
 **Output:**
@@ -74,7 +74,7 @@ SELECT column1, column2 FROM table_name WHERE condition;
 -- Paste Question 3 here
 
 ```sql
--- Paste your SQL code below for Question 3
+delete from Customer WHERE GRADE%2 = 1;
 ```
 
 **Output:**
@@ -86,7 +86,7 @@ SELECT column1, column2 FROM table_name WHERE condition;
 -- Paste Question 4 here
 
 ```sql
--- Paste your SQL code below for Question 4
+delete from Customer where GRADE>=2;
 ```
 
 **Output:**
@@ -98,7 +98,7 @@ SELECT column1, column2 FROM table_name WHERE condition;
 -- Paste Question 5 here
 
 ```sql
--- Paste your SQL code below for Question 5
+SELECT * FROM EmployeeInfo where EmpFname like 'S%';
 ```
 
 **Output:**
@@ -110,7 +110,7 @@ SELECT column1, column2 FROM table_name WHERE condition;
 -- Paste Question 6 here
 
 ```sql
--- Paste your SQL code below for Question 6
+select * from EmployeeInfo where EmpID >=5 and EmpID < 10;
 ```
 
 **Output:**
@@ -122,7 +122,7 @@ SELECT column1, column2 FROM table_name WHERE condition;
 -- Paste Question 7 here
 
 ```sql
--- Paste your SQL code below for Question 7
+select * from customer where city = 'New York' or grade = 100;
 ```
 
 **Output:**
@@ -134,7 +134,7 @@ SELECT column1, column2 FROM table_name WHERE condition;
 -- Paste Question 8 here
 
 ```sql
--- Paste your SQL code below for Question 8
+select id,value1, ABS(value1) as 'absolute_value' from Calculations;
 ```
 
 **Output:**
@@ -146,7 +146,7 @@ SELECT column1, column2 FROM table_name WHERE condition;
 -- Paste Question 9 here
 
 ```sql
--- Paste your SQL code below for Question 9
+select dname || ', ' || loc as 'dept_location' from dept;
 ```
 
 **Output:**
@@ -158,7 +158,7 @@ SELECT column1, column2 FROM table_name WHERE condition;
 -- Paste Question 10 here
 
 ```sql
--- Paste your SQL code below for Question 10
+update product set per_unit_price = 25 where purchase_date = '2022-08-15' and product_id = 12; 
 ```
 
 **Output:**
