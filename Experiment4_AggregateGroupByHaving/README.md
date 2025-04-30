@@ -41,7 +41,7 @@ HAVING condition;
 -- Paste Question 1 here
 
 ```sql
--- Paste your SQL code below for Question 1
+select DoctorID, count(*) as TotalRecords from MedicalRecords group by DoctorID;
 ```
 
 **Output:**
@@ -53,7 +53,7 @@ HAVING condition;
 -- Paste Question 2 here
 
 ```sql
--- Paste your SQL code below for Question 2
+select Specialty, count(*) as TotalDocto from Doctors group by specialty;
 ```
 
 **Output:**
@@ -65,7 +65,7 @@ HAVING condition;
 -- Paste Question 3 here
 
 ```sql
--- Paste your SQL code below for Question 3
+select max(price) - min(price) as price_diff from fruits;
 ```
 
 **Output:**
@@ -77,7 +77,7 @@ HAVING condition;
 -- Paste Question 4 here
 
 ```sql
--- Paste your SQL code below for Question 4
+select min(purch_amt) as MINIMUM from orders;
 ```
 
 **Output:**
@@ -89,7 +89,7 @@ HAVING condition;
 -- Paste Question 5 here
 
 ```sql
--- Paste your SQL code below for Question 5
+select name, length(name) as length from customer order by length(name) desc limit 1;
 ```
 
 **Output:**
@@ -101,7 +101,7 @@ HAVING condition;
 -- Paste Question 6 here
 
 ```sql
--- Paste your SQL code below for Question 6
+select name,email, length(email) as min_email_length from customer group by length(email) limit 1;
 ```
 
 **Output:**
@@ -113,7 +113,7 @@ HAVING condition;
 -- Paste Question 7 here
 
 ```sql
--- Paste your SQL code below for Question 7
+select occupation, MIN(workhour) from employee1 group by occupation having MIN(workhour) > 8;
 ```
 
 **Output:**
@@ -125,7 +125,7 @@ HAVING condition;
 -- Paste Question 8 here
 
 ```sql
--- Paste your SQL code below for Question 8
+select city, AVG(income) from employee group by city having avg(income) > 500000;
 ```
 
 **Output:**
@@ -137,7 +137,7 @@ HAVING condition;
 -- Paste Question 9 here
 
 ```sql
--- Paste your SQL code below for Question 9
+select category_id, product_name, max(price) as Price from products group by category_id having max(price) > 15;
 ```
 
 **Output:**
@@ -149,7 +149,7 @@ HAVING condition;
 -- Paste Question 10 here
 
 ```sql
--- Paste your SQL code below for Question 10
+select InsuranceCompany, count(PatientID) as TotalPatients from Insurance group by InsuranceCompany;
 ```
 
 **Output:**
