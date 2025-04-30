@@ -114,7 +114,7 @@ ADD COLUMN Mobilenumber number;
 
 **Output:**
 
-![Output1](output.png)
+![Output1](https://raw.githubusercontent.com/dharun06/files/refs/heads/main/A1.png)
 
 **Question 2**
 ---
@@ -131,7 +131,7 @@ create table Employees(
 
 **Output:**
 
-![Output2](output.png)
+![Output2](https://github.com/dharun06/files/blob/main/A2.png?raw=true)
 
 **Question 3**
 ---
@@ -143,7 +143,7 @@ insert into Employee select * from Former_employees
 
 **Output:**
 
-![Output3](output.png)
+![Output3](https://github.com/dharun06/files/blob/main/A3.png?raw=true)
 
 **Question 4**
 ---
@@ -158,7 +158,7 @@ alter table Companies add column dob date;
 
 **Output:**
 
-![Output4](output.png)
+![Output4](https://github.com/dharun06/files/blob/main/A4.png?raw=true)
 
 **Question 5**
 ---
@@ -175,7 +175,7 @@ create table Invoices(
 
 **Output:**
 
-![Output5](output.png)
+![Output5](https://github.com/dharun06/files/blob/main/A5.png?raw=true)
 
 **Question 6**
 ---
@@ -189,7 +189,7 @@ insert into Student_details (RollNo, Name, Gender, Subject, MARKS) VALUES (208,'
 
 **Output:**
 
-![Output6](output.png)
+![Output6](https://github.com/dharun06/files/blob/main/A6.png?raw=true)
 
 **Question 7**
 ---
@@ -209,7 +209,7 @@ create table orders(
 
 **Output:**
 
-![Output7](output.png)
+![Output7](https://github.com/dharun06/files/blob/main/A7.png?raw=true)
 
 **Question 8**
 ---
@@ -221,7 +221,7 @@ insert into Employee values (1,'Sarah Parker', 'Manager', 'HR', 60000)
 
 **Output:**
 
-![Output8](output.png)
+![Output8](https://github.com/dharun06/files/blob/main/A8.png?raw=true)
 
 **Question 9**
 ---
@@ -242,7 +242,7 @@ create table Employees(
 
 **Output:**
 
-![Output9](output.png)
+![Output9](https://raw.githubusercontent.com/dharun06/files/refs/heads/main/A9.png)
 
 **Question 10**
 ---
@@ -254,7 +254,7 @@ INSERT INTO Student_details (RollNo, Name, Gender) values (204, 'Samuel Black', 
 
 **Output:**
 
-![Output10](output.png)
+![Output10](https://github.com/dharun06/files/blob/main/AA.png?raw=true)
 
 
 ## RESULT
