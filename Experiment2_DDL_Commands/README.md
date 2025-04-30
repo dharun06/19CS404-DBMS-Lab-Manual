@@ -108,7 +108,8 @@ CREATE TABLE Table_Name (
 -- Paste Question 1 here
 
 ```sql
--- Paste your SQL code below for Question 1
+ALTER TABLE Student_details
+ADD COLUMN Mobilenumber number;
 ```
 
 **Output:**
@@ -120,7 +121,12 @@ CREATE TABLE Table_Name (
 -- Paste Question 2 here
 
 ```sql
--- Paste your SQL code below for Question 2
+create table Employees(
+    EmployeeID INTEGER,
+    FirstName TEXT,
+    LastName TEXT,
+    HireDate DATE
+);
 ```
 
 **Output:**
@@ -132,7 +138,7 @@ CREATE TABLE Table_Name (
 -- Paste Question 3 here
 
 ```sql
--- Paste your SQL code below for Question 3
+insert into Employee select * from Former_employees
 ```
 
 **Output:**
@@ -141,10 +147,13 @@ CREATE TABLE Table_Name (
 
 **Question 4**
 ---
--- Paste Question 4 here
+-- Paste Question 5 here
 
 ```sql
--- Paste your SQL code below for Question 4
+alter table Companies add column designation varchar(50);
+alter table Companies add column net_salary number;
+alter table Companies add column dob date;
+
 ```
 
 **Output:**
@@ -156,7 +165,12 @@ CREATE TABLE Table_Name (
 -- Paste Question 5 here
 
 ```sql
--- Paste your SQL code below for Question 5
+create table Invoices(
+    InvoiceID integer primary key,
+    InvoiceDate date,
+    DueDate date check (DueDate > InvoiceDate),
+    Amount real check (Amount > 0)
+);
 ```
 
 **Output:**
@@ -168,7 +182,9 @@ CREATE TABLE Table_Name (
 -- Paste Question 6 here
 
 ```sql
--- Paste your SQL code below for Question 6
+insert into Student_details (RollNo, Name, Gender, Subject, MARKS) VALUES (205,'Olivia Green','F','','');
+insert into Student_details (RollNo, Name, Gender, Subject, MARKS) VALUES (207,'Liam Smith','M','Mathematic',85);
+insert into Student_details (RollNo, Name, Gender, Subject, MARKS) VALUES (208,'Sophia Johns','F','Science','');
 ```
 
 **Output:**
@@ -180,7 +196,15 @@ CREATE TABLE Table_Name (
 -- Paste Question 7 here
 
 ```sql
--- Paste your SQL code below for Question 7
+create table orders(
+    ord_id not null,
+    item_id text not null,
+    ord_date date,
+    ord_qty integer,
+    cost integer,
+    primary key (item_id,ord_date),
+    check (length(ord_id) = 4)
+);
 ```
 
 **Output:**
@@ -192,7 +216,7 @@ CREATE TABLE Table_Name (
 -- Paste Question 8 here
 
 ```sql
--- Paste your SQL code below for Question 8
+insert into Employee values (1,'Sarah Parker', 'Manager', 'HR', 60000)
 ```
 
 **Output:**
@@ -204,7 +228,16 @@ CREATE TABLE Table_Name (
 -- Paste Question 9 here
 
 ```sql
--- Paste your SQL code below for Question 9
+create table Employees(
+    EmployeeID integer primary key,
+    FirstName text not null,
+    LastName text not null,
+    Email varchar unique,
+    Salary integer,
+    DepartmentID integer,
+    foreign key (DepartmentID) references Departments(DepartmentID),
+    check (Salary > 0)
+);
 ```
 
 **Output:**
@@ -216,7 +249,7 @@ CREATE TABLE Table_Name (
 -- Paste Question 10 here
 
 ```sql
--- Paste your SQL code below for Question 10
+INSERT INTO Student_details (RollNo, Name, Gender) values (204, 'Samuel Black', 'M');
 ```
 
 **Output:**
