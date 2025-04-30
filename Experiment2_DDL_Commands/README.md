@@ -105,7 +105,7 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+![Question1](https://raw.githubusercontent.com/dharun06/files/refs/heads/main/Q1.png)
 
 ```sql
 ALTER TABLE Student_details
@@ -118,7 +118,7 @@ ADD COLUMN Mobilenumber number;
 
 **Question 2**
 ---
--- Paste Question 2 here
+![Question2](https://raw.githubusercontent.com/dharun06/files/refs/heads/main/Q2.png)
 
 ```sql
 create table Employees(
@@ -135,7 +135,7 @@ create table Employees(
 
 **Question 3**
 ---
--- Paste Question 3 here
+![Question3](https://raw.githubusercontent.com/dharun06/files/refs/heads/main/Q3.png)
 
 ```sql
 insert into Employee select * from Former_employees
@@ -147,7 +147,7 @@ insert into Employee select * from Former_employees
 
 **Question 4**
 ---
--- Paste Question 5 here
+![Question4](https://raw.githubusercontent.com/dharun06/files/refs/heads/main/Q4.png)
 
 ```sql
 alter table Companies add column designation varchar(50);
@@ -162,7 +162,7 @@ alter table Companies add column dob date;
 
 **Question 5**
 ---
--- Paste Question 5 here
+![Question5](https://raw.githubusercontent.com/dharun06/files/refs/heads/main/Q5.png)
 
 ```sql
 create table Invoices(
@@ -179,7 +179,7 @@ create table Invoices(
 
 **Question 6**
 ---
--- Paste Question 6 here
+![Question6](https://raw.githubusercontent.com/dharun06/files/refs/heads/main/Q6.png)
 
 ```sql
 insert into Student_details (RollNo, Name, Gender, Subject, MARKS) VALUES (205,'Olivia Green','F','','');
@@ -193,7 +193,7 @@ insert into Student_details (RollNo, Name, Gender, Subject, MARKS) VALUES (208,'
 
 **Question 7**
 ---
--- Paste Question 7 here
+![Question7](https://raw.githubusercontent.com/dharun06/files/refs/heads/main/Q7.png)
 
 ```sql
 create table orders(
@@ -213,8 +213,7 @@ create table orders(
 
 **Question 8**
 ---
--- Paste Question 8 here
-
+![Ques8](https://github.com/dharun06/files/blob/main/Q8.png)
 ```sql
 insert into Employee values (1,'Sarah Parker', 'Manager', 'HR', 60000)
 ```
@@ -225,7 +224,7 @@ insert into Employee values (1,'Sarah Parker', 'Manager', 'HR', 60000)
 
 **Question 9**
 ---
--- Paste Question 9 here
+![Question9](https://raw.githubusercontent.com/dharun06/files/refs/heads/main/Q9.png)
 
 ```sql
 create table Employees(
@@ -246,7 +245,7 @@ create table Employees(
 
 **Question 10**
 ---
--- Paste Question 10 here
+![QuestionQ](https://raw.githubusercontent.com/dharun06/files/refs/heads/main/QQ.png)
 
 ```sql
 INSERT INTO Student_details (RollNo, Name, Gender) values (204, 'Samuel Black', 'M');
