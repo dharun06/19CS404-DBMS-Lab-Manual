@@ -37,125 +37,182 @@ HAVING condition;
 ```
 
 **Question 1**
---
--- Paste Question 1 here
 
-```sql
-select DoctorID, count(*) as TotalRecords from MedicalRecords group by DoctorID;
+How many patients have expired insurance coverage for each insurance company?
+
+Sample table:Insurance Table
+
+![image](https://github.com/user-attachments/assets/24c11c16-fda1-48d6-8d6e-2e159a24cffc)
+
+```
+select InsuranceCompany,count(*) as TotalExpiredPatients
+
+from Insurance
+
+group by InsuranceCompany;
+
 ```
 
 **Output:**
 
-![Output1](output.png)
+![image](https://github.com/user-attachments/assets/20e858b4-22b0-48c6-9bf3-9d2c7a4998dc)
 
 **Question 2**
----
--- Paste Question 2 here
 
-```sql
-select Specialty, count(*) as TotalDocto from Doctors group by specialty;
+How many prescriptions were written by each doctor? Sample tablePrescriptions Table
+
+![image](https://github.com/user-attachments/assets/2faf38d5-f5a1-4aaa-8f66-f90287a56872)
+
+```
+SELECT DoctorID,count(*) as TotalPrescriptions
+
+from Prescriptions
+
+group by DoctorID;
 ```
 
 **Output:**
 
-![Output2](output.png)
+![image](https://github.com/user-attachments/assets/bf51c0bd-1599-496a-98b5-6f16c0d9fbf8)
 
 **Question 3**
----
--- Paste Question 3 here
 
-```sql
-select max(price) - min(price) as price_diff from fruits;
-```
+What is the total number of appointments scheduled by each doctor?
+
+Sample table:Appointments Table
+
+![image](https://github.com/user-attachments/assets/75c5ce93-a221-4c68-8a23-7161ed3a5e77)
 
 **Output:**
 
-![Output3](output.png)
+![image](https://github.com/user-attachments/assets/4a9b35c7-4a2e-4300-b081-cad01604449f)
 
 **Question 4**
----
--- Paste Question 4 here
 
-```sql
-select min(purch_amt) as MINIMUM from orders;
+Write a SQL query to find the Fruit with the lowest available quantity.
+
+![image](https://github.com/user-attachments/assets/27cf1e74-1c19-4490-9ebe-23065a526b91)
+
+```
+select name as fruit_name , min(inventory) as lowest_quantity
+
+from fruits;
 ```
 
 **Output:**
 
-![Output4](output.png)
+![image](https://github.com/user-attachments/assets/bd2f72ed-db09-42cc-bd75-8c7878707651)
 
 **Question 5**
----
--- Paste Question 5 here
 
-```sql
-select name, length(name) as length from customer order by length(name) desc limit 1;
+Write a SQL query to calculate total available amount of fruits that has a price greater than 0.5 . Return total Count.
+
+Note: Inventory attribute contains amount of fruits
+
+![image](https://github.com/user-attachments/assets/2cb61809-cb7d-4351-ba8f-329cc294fb9e)
+
+```
+select sum(inventory) as total_available_amount
+
+from fruits
+
+where price>0.5;
 ```
 
 **Output:**
 
-![Output5](output.png)
+![image](https://github.com/user-attachments/assets/213bbf0d-1557-4f0a-ab42-5e5a61952cc2)
 
 **Question 6**
----
--- Paste Question 6 here
 
-```sql
-select name,email, length(email) as min_email_length from customer group by length(email) limit 1;
+Write a SQL query to find the average salary of all employees?
+
+![image](https://github.com/user-attachments/assets/1e77a350-4bbf-495d-a20b-e8ccc5e31c02)
+
+```
+select avg(income) as Average_Salary
+
+from employee;
 ```
 
 **Output:**
 
-![Output6](output.png)
+![image](https://github.com/user-attachments/assets/c8b2bf66-ee97-44ba-9bd0-20adb5da7362)
 
 **Question 7**
----
--- Paste Question 7 here
 
-```sql
-select occupation, MIN(workhour) from employee1 group by occupation having MIN(workhour) > 8;
+Write a SQL query to determine the number of customers who received at least one grade for their activity.
+
+![image](https://github.com/user-attachments/assets/70e5a71c-884e-44c8-8eb6-8ab639e59296)
+
+```
+SELECT COUNT(customer_id) AS COUNT
+
+FROM customer
+
+where grade is not null;
 ```
 
 **Output:**
 
-![Output7](output.png)
+![image](https://github.com/user-attachments/assets/9fba989d-16ad-4a8f-a97f-49b6182e764f)
 
 **Question 8**
----
--- Paste Question 8 here
 
-```sql
-select city, AVG(income) from employee group by city having avg(income) > 500000;
+Write the SQL query that accomplishes the selection of total cost of all products in each category from the "products" table and includes only those products where the total cost is greater than 50.
+
+![image](https://github.com/user-attachments/assets/d680ceea-5815-4afe-9118-552602c81b16)
+
+```
+select category_id,sum(price) as Total_Cost
+
+from products
+
+group by category_id
+
+having Total_Cost>50;
+
 ```
 
 **Output:**
 
-![Output8](output.png)
+![image](https://github.com/user-attachments/assets/2326d0a2-ebca-40af-99dc-d723c10dd25d)
 
 **Question 9**
----
--- Paste Question 9 here
 
-```sql
-select category_id, product_name, max(price) as Price from products group by category_id having max(price) > 15;
+Write a SQL query to find the difference between the maximum and minimum price of fruits?
+
+![image](https://github.com/user-attachments/assets/e8e12762-d3dd-4176-bc4f-b59d792ddf06)
+
+```
+select (max(price)-min(price)) as price_diff
+
+from fruits;
 ```
 
 **Output:**
 
-![Output9](output.png)
+![image](https://github.com/user-attachments/assets/193b77e0-d6a4-4870-afad-756785be4d0e)
 
 **Question 10**
----
--- Paste Question 10 here
 
-```sql
-select InsuranceCompany, count(PatientID) as TotalPatients from Insurance group by InsuranceCompany;
+Write a SQL query to find the average length of names for people living in Chennai?
+
+
+![image](https://github.com/user-attachments/assets/947d305b-13d2-44b3-91d9-b48aa2c0bb8b)
+
+```
+select avg(length(name)) as avg_name_length
+
+from customer
+
+where city like '%Chennai%';
+
 ```
 
 **Output:**
 
-![Output10](output.png)
-
+![image](https://github.com/user-attachments/assets/212949f5-a186-4f1e-9502-26bd35b00cd6)
 
 ## RESULT
 Thus, the SQL queries to implement aggregate functions, GROUP BY, and HAVING clause have been executed successfully.
